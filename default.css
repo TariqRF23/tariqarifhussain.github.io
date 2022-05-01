@@ -248,7 +248,7 @@ h6 { font-size: 16px;}
 }
 
 #preview{
-	width: 500px;
+	width: 700px;
 	border:1.5px solid #17a2b8;
 	background-color: var(--previewBg);
 	padding:9px;
