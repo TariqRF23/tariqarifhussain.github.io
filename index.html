@@ -60,6 +60,50 @@
     }
   	</style>
 
+
+<style>
+body {font-family: Bahnschrift;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: 'Bahnschrift Light', monospace;
+  color: var(--secondaryText);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+ 
 </head>
 <body>
 
@@ -124,18 +168,35 @@
 				<div class="about-me">
 					<h4>ABOUT ME</h4>
 
-			<p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'World View')" id="defaultOpen">World View</button>
+  <button class="tablinks" onclick="openCity(event, 'Motivation')">Motivation</button>
+  <button class="tablinks" onclick="openCity(event, 'Passion')">Passion</button>
+  <button class="tablinks" onclick="openCity(event, 'Professional Context')">Professional Context</button>
+  <button class="tablinks" onclick="openCity(event, 'Core Values')">Core Values</button>
+</div>
+
+<div id="World View" class="tabcontent">
+    <p>
 I thrive in a world that combines both tech and business. Digitization, product-ownership, marketing and value-creation, all aspects which I believe should be realized from a unified vision or ideology. I also believe in bold moves for innovation.
-			</p>
+		</p>
+</div>
 
-			<p>
+<div id="Motivation" class="tabcontent">
+    <p>
 Sometimes a little-bit of risk can yield great rewards. I always push myself to think from all the sides of the box to find the situation which can yield the maximum reward or the best-possible outcome! 
-			</p>
+		</p>
+</div>
 
-			<p>
+<div id="Passion" class="tabcontent">
+    <p>
 With that being said, I intimately understand the need for constraints in business logic. I love finding myself working with the details, designing systems which are complacent to constraints whilst remaining successful in terms of the over-all goals they need to achieve.
-			</p>
- 
+		</p>
+</div>
+
+<div id="Professional Context" class="tabcontent">
+
  <p>I would introduce myself in a professional context as:
 
  				<ul>
@@ -161,15 +222,29 @@ With that being said, I intimately understand the need for constraints in busine
  				</ul>
 
  	</p>
+</div>
 
- 	<p>
+<div id="Core Values" class="tabcontent">
+
+  <p>
 
  				
  						The core values that I believe in are sincerity, creativity, showing initiative and taking on responsibility. I am the type of team player that listens and allows my actions to speak for itself. Furthermore, I hold a great sense of respect for my seniors and diligent care for the success of my peers.
  				
 
  				
-  </p>  				    				    				
+  </p>
+
+</div>
+			
+
+			
+
+			
+ 
+ 
+
+ 					    				    				
   				
 					
 					<hr>
@@ -450,7 +525,26 @@ With that being said, I intimately understand the need for constraints in busine
     });
 </script>
 
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 </script>
-	<script type="text/javascript" src="script.js"></script>
+
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
