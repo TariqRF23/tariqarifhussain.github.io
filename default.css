@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, strong{
 
 p, li, span, label, input, textarea{
 	color: var(--secondaryText);
-	font-family: 'Bahnschrift Light', monospace;
+	font-family: 'Bahnschrift Light','Lucida Console (monospace)', monospace;
 	text-align: justify;
   	text-justify: inter-word;
 }
