@@ -103,6 +103,46 @@ body {font-family: Bahnschrift;}
   border-top: none;
 }
 </style>
+
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-family: 'Bahnschrift Light', monospace;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
  
 </head>
 <body>
@@ -394,9 +434,10 @@ I thrive in a world that combines both tech and business. Digitization, product-
 			<div class="about-wrapper">
 				<div class="about-me">
 					<h4>CERTIFICATE COURSES COMPLETED</h4>
-					<ul>
-						<li>LinkedIn Learning</li>
-							<ul>
+
+<button class="accordion">LinkedIn Learning</button>
+<div class="panel">
+   						<ul>
 								<li><a target="_blank" href="LinkedIn Learning/CertificateOfCompletion_Business Analysis Foundations.pdf#toolbar=0">Business Analysis Foundations</a></li>
 								<li><a target="_blank" href="LinkedIn Learning/CertificateOfCompletion_Agile Requirements Foundations.pdf#toolbar=0">Agile Requirements Foundations</a></li>
 								<li><a target="_blank" href="LinkedIn Learning/CertificateOfCompletion_Business Analysis Business Benefits Realization.pdf#toolbar=0">Business Analysis: Business Benefits Realization</a></li>
@@ -404,24 +445,30 @@ I thrive in a world that combines both tech and business. Digitization, product-
 								<li><a target="_blank" href="LinkedIn Learning/CertificateOfCompletion_Requirements Elicitation and Analysis.pdf#toolbar=0">Requirements Elicitation and Analysis</a></li>
 								<li><a target="_blank" href="LinkedIn Learning/CertificateOfCompletion_Email and Newsletter Marketing Foundations.pdf#toolbar=0">Email and Newsletter Marketing Foundations</a></li>
 							</ul>
+</div>
 
-						<li>Google Data Analytics Professional Certificate</li>
-							<ul>
+<button class="accordion">Google Data Analytics Professional Certificate</button>
+<div class="panel">
+  					<ul>
 								<li><a target="_blank" href="Google Data Analytics Professional Certificate/1. Foundations Data, data, everywhere.pdf#toolbar=0">Foundations: Data, data, everywhere</a></li>
 								<li><a target="_blank" href="Google Data Analytics Professional Certificate/2. Ask questions to make data-driven decisions.pdf#toolbar=0">Ask Questions to Make Data-Driven Decisions</a></li>
 								<li><a target="_blank" href="Google Data Analytics Professional Certificate/3. Prepare Data for Exploration.pdf#toolbar=0">Prepare Data for Exploration</a></li>
-							</ul>
+						</ul>
+</div>
 
-						<li>Google Analytics Academy</li>
-							<ul>
+<button class="accordion">Google Analytics Academy</button>
+<div class="panel">
+  					<ul>
 								<li><a target="_blank" href="Google Analytics Academy/1. Google Analytics for Beginners (Tariq Hussain).pdf#toolbar=0">Google Analytics for Beginners</a></li>
 								<li><a target="_blank" href="Google Analytics Academy/2. Advanced Google Analytics (Tariq Hussain).pdf#toolbar=0">Advanced Google Analytics</a></li>
 								<li><a target="_blank" href="Google Analytics Academy/3. Google Analytics for Power Users (Tariq Hussain).pdf#toolbar=0">Google Analytics for Power Users</a></li>
 								<li><a target="_blank" href="Google Analytics Academy/4. Introduction to Data Studio (Tariq Hussain).pdf#toolbar=0">Introduction to Data Studio</a></li>
 								<li><a target="_blank" href="Google Analytics Academy/5. Google Tag Manager Fundamentals (Tariq Hussain).pdf#toolbar=0">Google Tag Manager Fundamentals</a></li>
 								<li><a target="_blank" href="Google Analytics Academy/6. Getting Started with Google Analytics 360 (Tariq Hussain).pdf#toolbar=0">Getting Started with Google Analytics 360</a></li>
-							</ul>
-					</ul>
+						</ul>
+</div>
+
+					
 
 				</div>
 				
@@ -563,6 +610,23 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
 </script>
 
 
