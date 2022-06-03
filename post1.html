@@ -3,15 +3,18 @@
 <head>
 	<title>Internship at OCS Consulting B.V.</title>
 
-
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap1.css">
 
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
 	<style type="text/css">
 		.img-container{
@@ -23,6 +26,7 @@
 		}
 
 	</style>
+	
 
 </head>
 <body>
@@ -62,8 +66,19 @@
 		<p>The objective of the project is to create an efficient system of managing their clientele information using a data driven web-application. The company takes a project-based approach to purpose this as an opportunity to investigate how to efficiently record their clientele assignments and standardize the process within the company. Further, they want to investigate if this data holds any valuable information when subjected to a business intelligence or a data-visualization tool. Specifically, the company wants to know if the web-application developed for this purpose can contribute to finding valuable information, ease of reference and a more efficient process.</p>
 		<br>
 		
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+    	VIEW RECOMMENDATION #1
+  		</button>
 
-		<h5>Technologies Used</h5>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+    	VIEW RECOMMENDATION #2
+  		</button>
+
+  		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+    	VIEW RECOMMENDATION #3
+  		</button>
+
+  		<h5>Technologies Used</h5>
 		<ul>
 			<li> HTML & CSS</li>
 			<li> MySQL</li>
@@ -82,6 +97,70 @@
 		</ul>
 
 	</div>
+
+	<div class="container">
+  
+  	<div class="modal fade" id="myModal1">
+    	<div class="modal-dialog modal-lg">
+      		<div class="modal-content">
+      
+        
+        	<div class="modal-header">
+          		<h4 class="modal-title">UNIVERSITY SUPERVISOR</h4>
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        	</div>
+        
+        
+        	<div class="modal-body">
+          		<img src="Record Letters/0005.jpg">
+        	</div>
+               
+        
+      		</div>
+    	</div>
+  	</div>
+  
+  	<div class="modal fade" id="myModal2">
+    	<div class="modal-dialog modal-lg">
+      		<div class="modal-content">
+      
+        
+        	<div class="modal-header">
+          		<h4 class="modal-title">COMPANY MENTOR</h4>
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        	</div>
+        
+        
+        	<div class="modal-body">
+          		<img src="Record Letters/0007.jpg">
+        	</div>
+               
+        
+      		</div>
+    	</div>
+  	</div>
+
+  	<div class="modal fade" id="myModal3">
+    	<div class="modal-dialog modal-lg">
+      		<div class="modal-content">
+      
+        
+        	<div class="modal-header">
+          		<h4 class="modal-title">EXTERNAL CONSULTANT</h4>
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        	</div>
+        
+        
+        	<div class="modal-body">
+          		<img src="Record Letters/0006.jpg">
+        	</div>
+               
+        
+      		</div>
+    	</div>
+  	</div>
+  
+</div>
 
 </body>
 </html>
