@@ -352,13 +352,26 @@ template {
   display: none !important;
 }
 
-h1, h2, h3, h4, h5, h6,
+h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
+  
+  margin-bottom: 0.25rem;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
+  text-align: left;
+}
+
+ h5, 
+ .h5, {
+  margin-bottom: 0rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  text-align: left;
+  margin-top: 0;
 }
 
 h1, .h1 {
