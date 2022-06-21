@@ -258,8 +258,10 @@ h6 { font-size: 16px;}
 	display: grid;
 	align-content: center;
 
+
 	padding-top: 10px;
 	padding-bottom: 110px;
+	padding-left: 130px;
 	background-color: #d9e7f4;
 }
 
