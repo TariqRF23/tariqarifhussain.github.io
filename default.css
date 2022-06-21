@@ -255,22 +255,19 @@ h6 { font-size: 16px;}
 
 .right-column{
 	grid-area: right-column;
-	display: grid;
-	align-content: center;
-
-
+	display: inline-grid;
+	justify-content: safe center;
 	padding-top: 10px;
 	padding-bottom: 110px;
-	padding-left: 130px;
 	background-color: #d9e7f4;
 }
 
 
 #preview-shadow{
 	background-color: #d9e7f4;
-	max-width: 250px;
+	max-width: 270px;
 	height: 200px;
-	padding-left: 30px;
+	padding-left: 0px;
 	padding-top: 30px;
 }
 
