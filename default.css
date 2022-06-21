@@ -190,6 +190,7 @@ h6 { font-size: 16px;}
 	grid-area: left-column;
 	padding-top:50px;
 	padding-bottom: 50px;
+	background-color: #ecf0f3;
 }
 
 #profile_pic{
@@ -259,11 +260,12 @@ h6 { font-size: 16px;}
 
 	padding-top: 10px;
 	padding-bottom: 110px;
+	background-color: #d9e7f4;
 }
 
 
 #preview-shadow{
-	background-color: var(--previewShadow);
+	background-color: #e8ebef;
 	max-width: 250px;
 	height: 200px;
 	padding-left: 30px;
