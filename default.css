@@ -275,10 +275,10 @@ h6 { font-size: 16px;}
 	display: block;
 	margin:0 auto;
 
-	width: 341px;
+	width: 345px;
 	border:2px solid var(--borderColor);
 	background-color: var(--previewBg);
-	padding:9px;
+	padding:5px;
 	position: relative;
 }
 
