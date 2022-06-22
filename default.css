@@ -265,7 +265,7 @@ h6 { font-size: 16px;}
 
 #preview-shadow{
 	background-color: #d9e7f4;
-	max-width: 280px;
+	max-width: 340px;
 	height: 200px;
 	padding-left: 0px;
 	padding-top: 40px;
@@ -275,7 +275,7 @@ h6 { font-size: 16px;}
 	display: block;
 	margin:0 auto;
 
-	width: 280px;
+	width: 341px;
 	border:2px solid var(--borderColor);
 	background-color: var(--previewBg);
 	padding:9px;
