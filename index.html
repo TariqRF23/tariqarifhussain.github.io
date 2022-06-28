@@ -173,6 +173,51 @@ body {font-family: Bahnschrift;}
 </style>
 
 <style>
+.collapsible {
+  background-color: #ecf0f3;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Bahnschrift Light', monospace;
+}
+
+.active, .collapsible:hover {
+  background-color: #d9e7f4;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsibleactive:after {
+  content: "\2212";
+  color: #777;
+}
+
+.content {
+  padding: 0 18px;
+  justify-content: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #eaeaea;
+}
+
+
+</style>
+
+
+
+<style>
 
 footer {
   background-color: white;
@@ -196,7 +241,9 @@ footer {
 
 				<div class="intro-wrapper">
 				<div class="nav-wrapper">
-
+					
+					
+					
 					<a href="index.html">
 					<div class="dots-wrapper">
 						<div id="dot-1" class="browser-dot"></div>
@@ -216,7 +263,11 @@ footer {
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal100">
     								RESUME
 								</button>
-
+								<a href="#C10">
+								
+								<button type="button" class="btn btn-primary">FAQS</button>
+							
+								</a>
 
 								<div class="container">
   							<div class="modal fade" id="myModal100">
@@ -791,7 +842,24 @@ The core values that I believe in are sincerity, creativity, showing initiative 
 	</div>
 </section>
 
+ <div class="main-container">
+ <h5 id="C10">FREQUENTLY ASKED QUESTIONS</h5>
+ <br>
+ 	<button type="button" class="collapsible">What is your educational background?</button>
+<div class="content">
+	<br>
+  <p>I did my MSc. in Corporate Management from the University of Europe for Applied Sciences, located in Berlin, Germany. Prior to which, I completed my BSc. in Information and Communication Technology from Fontys University of Applied Sciences, located in Eindhoven, the Netherlands.</p>
+  <br>
+</div>
 
+<button type="button" class="collapsible">What is your LinkedIn Profile?</button>
+<div class="content">
+	<br>
+  <p>My LinkedIn Profile is: <a href="https://www.linkedin.com/in/tariq-hussain-89b846a6/">https://www.linkedin.com/in/tariq-hussain-89b846a6/</a> </p>
+  <br>
+</div>
+
+ </div>
 	
 <footer>
 	
@@ -897,7 +965,22 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("collapsibleactive");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 
 <script type="text/javascript" src="script.js"></script>
