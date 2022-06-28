@@ -85,12 +85,14 @@ h6 { font-size: 16px;}
 	background-color: var(--mainColor);
 	border-bottom:1px white;
 	overflow:auto;
+
 }
 
 .s2{
 	background-color: var(--secondaryColor);
 	border-bottom:1px white;
 	overflow:auto;
+
 }
 
 
@@ -99,6 +101,7 @@ h6 { font-size: 16px;}
 .main-container{
 	width: 1200px;
 	margin: 0 auto;
+
 }
 
 
@@ -319,15 +322,17 @@ h6 { font-size: 16px;}
 	padding-bottom: 10px;
 	padding-top: 0px;
 	gap:100px;
+
 }
 
 
 #skills{
 
-	display: grid;
+			display: grid;
     	grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
     	background-color: #eaeaea;
     	padding-bottom: 50px;
+
 
 	/*height: 300px;
     display: flex;
@@ -347,6 +352,8 @@ h6 { font-size: 16px;}
 	display: grid;
 	align-content: center;
 	text-align: left;
+	
+
 }
 
 #social_img{
