@@ -5937,10 +5937,10 @@ button.close {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 15%;
+  width: 2%;
   color: #fff;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .carousel-control-prev:hover, .carousel-control-prev:focus,
