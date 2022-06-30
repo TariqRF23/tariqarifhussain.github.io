@@ -268,7 +268,7 @@ footer {
  
 </head>
 <body>
-
+<div id="preloader"></div>
 
 	<section class="s1">
 		<div class="main-container">
@@ -1300,7 +1300,14 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 			
-        
+<script>
+	
+	var loader = document.getElementById("preloader");
+	window.addEventListener("load", function(){
+		loader.style.display = "none";
+	})
+
+</script>     
 
 
 <script type="text/javascript" src="script.js"></script>
