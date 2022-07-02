@@ -2375,15 +2375,11 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #4b5156;
-  background-color: #9bc8e5;
-  border-color: #c1c1c1;
-}
-
-.btn-primary1 {
-  color: #4b5156;
   background-color: #c1c1c1;
   border-color: #c1c1c1;
 }
+
+
 
 .btn-primary:hover {
   color: #fff;
