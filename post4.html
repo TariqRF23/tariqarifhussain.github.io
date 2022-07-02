@@ -775,7 +775,7 @@ a.ex5:hover, a.ex5:active {text-decoration: underline;}
         <div class="modal-dialog modal-lg">
         <div class="modal-content">
         <div class="modal-header">
-        <h3>Bibliography</h3>
+        <h3>Bibliography [1-23]</h3>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
@@ -791,7 +791,33 @@ a.ex5:hover, a.ex5:active {text-decoration: underline;}
         <img src="UE/How Blockchain Based Smart-Contracts Can Improve Invoicing Accuracy- Tariq Hussain/5. References/0061.jpg">
         </div>
 
-        <div class="carousel-item">
+        <a class="carousel-control-prev" href="#demo9" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo9" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>
+                      
+        
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="myModal10">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h3>Bibliography [24-50]</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo10" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+        <div class="carousel-item active">
         <img src="UE/How Blockchain Based Smart-Contracts Can Improve Invoicing Accuracy- Tariq Hussain/5. References/0062.jpg">
         </div>
 
@@ -799,7 +825,34 @@ a.ex5:hover, a.ex5:active {text-decoration: underline;}
         <img src="UE/How Blockchain Based Smart-Contracts Can Improve Invoicing Accuracy- Tariq Hussain/5. References/0063.jpg">
         </div>
 
-        <div class="carousel-item">
+        <a class="carousel-control-prev" href="#demo10" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo10" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>
+                      
+        
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="myModal11">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h3>Bibliography [51-73]</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo11" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+
+        <div class="carousel-item active">
         <img src="UE/How Blockchain Based Smart-Contracts Can Improve Invoicing Accuracy- Tariq Hussain/5. References/0064.jpg">
         </div>
 
@@ -809,10 +862,10 @@ a.ex5:hover, a.ex5:active {text-decoration: underline;}
 
 
 
-        <a class="carousel-control-prev" href="#demo9" data-slide="prev">
+        <a class="carousel-control-prev" href="#demo11" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
         </a>
-        <a class="carousel-control-next" href="#demo9" data-slide="next">
+        <a class="carousel-control-next" href="#demo11" data-slide="next">
         <span class="carousel-control-next-icon"></span>
         </a>
         </div>
@@ -931,7 +984,11 @@ a.ex5:hover, a.ex5:active {text-decoration: underline;}
     </td>
 
     <td>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal9">Bibliography</button>
+      <div class="btn-group btn-group-justified">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal9">1|23</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal10">24|50</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal11">51|73</button>
+      </div>
     </td>
   </tr>
 
@@ -1041,6 +1098,28 @@ a.ex5:hover, a.ex5:active {text-decoration: underline;}
         <script>
         $(document).ready(function(){
         $("#demo9").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+        <script>
+        $(document).ready(function(){
+        $("#demo10").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+        <script>
+        $(document).ready(function(){
+        $("#demo11").carousel({interval: 5000});
         $(".carousel-control-prev").click(function(){
         $("#myCarousel").carousel("prev");
         });
