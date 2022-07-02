@@ -55,6 +55,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   width: 100%;
   position: fixed;
   z-index: 100;
+  text-align: center;
+  padding-top: 200px;
 }
 
 #preloader1 {
@@ -64,6 +66,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   width: 100%;
   position: fixed;
   z-index: 100;
+  text-align: center;
+  padding-top: 200px;
   }
 
 
