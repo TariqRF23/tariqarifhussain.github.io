@@ -49,7 +49,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 #preloader{
-  background: white url(images/loader3.gif) no-repeat center center;
+  background: #FFFFFF url(images/loader3.gif) no-repeat center center;
   background-size: 20%;
   height: 100vh;
   width: 100%;
