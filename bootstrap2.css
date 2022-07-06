@@ -269,7 +269,7 @@ button {
 
 button:focus {
   outline: 1px dotted;
-  outline: 1px auto -webkit-focus-ring-color;
+  outline: 1px auto white;
 }
 
 input,
@@ -2345,6 +2345,27 @@ textarea.form-control {
   
 }
 
+.btn1 {
+  display: inline-block;
+  box-shadow: none;
+  outline: none;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: transparent;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
@@ -2356,7 +2377,7 @@ textarea.form-control {
 }
 
 .btn:focus, .btn.focus {
-  outline: none;
+  outline: none !important;
   box-shadow: none;
 }
 
@@ -2921,26 +2942,30 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #17a2b8;
   background-color: transparent;
+  box-shadow: none !important
 }
 
 .btn-link:hover {
-  color: #0056b3;
+  color: #c1c1c1;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
+  box-shadow: none !important
 }
 
 .btn-link:focus, .btn-link.focus {
   text-decoration: underline;
-  border-color: transparent;
-  box-shadow: none;
+  border-color: #ffffff;
+  box-shadow: none !important
 }
 
 .btn-link:disabled, .btn-link.disabled {
-  color: #6c757d;
+  color: #ffffff;
   pointer-events: none;
+  text-decoration: underline;
+  box-shadow: none !important
 }
 
 .btn-lg, .btn-group-lg > .btn {
