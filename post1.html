@@ -29,6 +29,28 @@
 	</style>
 
 	<style>
+
+  	table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  	width: 100%;
+  	border: 1px solid #ddd;
+  	}
+
+
+  	th, td {
+  	border-style:solid;
+  	border-color: #d9e7f4;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	width: 10px;
+  	}
+  
+	</style>
+
+	<style>
 		footer {
   		background-color: white;
   		padding: 1px;
@@ -37,7 +59,61 @@
 		}
 	</style>
 
+<style>
+.accordion {
+  background-color: #ecf0f3;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  transition: 0.5s;
+  font-family: 'Bahnschrift Light', monospace;
+  box-shadow: none;
+  border-color: transparent;
+}
 
+.active, .accordion:hover {
+  background-color: #d9e7f4;
+  outline: none;
+  box-shadow: none;
+  border-color: transparent !important;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  outline: none;
+  box-shadow: none;
+  border-color: transparent !important;
+}
+
+.accordionactive:after {
+  content: "\2212"; 
+  outline: none;
+  box-shadow: none;
+  border-color: transparent !important;
+  color: #777;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  borner: none;
+  outline: none;
+  box-shadow: none;
+  border-color: transparent !important;
+}
+
+
+</style>
 	
 
 </head>
@@ -47,7 +123,7 @@
   	</div>
 	<div class="nav-wrapper">
 
-		<!-- Link around dots-wrapper added after tutorial video -->
+		
 		<a href="index.html">
 			<div class="dots-wrapper">
 				<div id="dot-1" class="browser-dot"></div>
@@ -104,82 +180,942 @@
 		</ul>
 
 
-		<h5>Documentation</h5>
+		<h4>Documentation</h4>
+		
+
+		<button class="accordion">1. Main Report</button>
+		<div class="panel">
+		<h6>1.1 Front Matter</h6>
+		<table style="width:100%">
+        	<tr>
+        		<td>
+        	<div class="btn-group btn-group-justified">
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4">Cover,</button>
+        		
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal5">Summary,</button>
+        		
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal6">Glossary</button>
+        	</div>
+
+        		</td>
+        	</tr>
+        </table>
+        <h6>1.2 Individual Chapters</h6>
+        <table style="width:100%">
+        	<tr>
+        		
+        		<td>
+        	<div class="btn-group btn-group-justified">
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal7">1,</button>
+        		
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal8">2,</button>
+        		
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal9">3,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal10">4,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal11">5,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal12">6,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal13">7,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal14">8</button>
+        	</div>
+        		
+        	</td>
+        	</tr>
+        	</table>
+        	<h6>1.3 End Matter</h6>
+        	<table style="width:100%">
+        	<tr>
+        		
+        	<td>
+        	<div class="btn-group btn-group-justified">
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal15">Evaluation,</button>
+        		
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal16">References</button>
+        		
+        	</div>
+        		
+        		</td>
+        	</tr>
+        	</table>
+    		</div>
+
+
+    		<button type="button" class="btn2 btn-link1" data-toggle="modal" data-target="#myModal17">2. Appendix A- Graduation Project Survey</button>
+
+    	<button class="accordion">3. Appendix B- Project Plan</button>
+		<div class="panel">
+		<h6>3.1 Front Matter</h6>
+			<table style="width:100%">
+        	<tr>
+        		
+        	<td>
+        	<div class="btn-group btn-group-justified">
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal18">Cover,</button>
+        		
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal19">Management Summary,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal20">Table of Contents</button>
+        		
+        	</div>
+        		
+        		</td>
+        	</tr>
+        	</table>
+		<h6>3.2 Individual Chapters</h6>
+			<table style="width:100%">
+        	<tr>
+        		
+        	<td>
+        	<div class="btn-group btn-group-justified">
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal21">1,</button>
+        		
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal22">2,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal23">3,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal24">4,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal25">5,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal26">6,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal27">7,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal28">8,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal29">9,</button>
+
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal30">References</button>
+        		
+        	</div>
+        		
+        		</td>
+        	</tr>
+        	</table>
+		<h6>3.3 Attachment A</h6>
+			<table style="width:100%">
+        	<tr>
+        		
+        	<td>
+        	<div class="btn-group btn-group-justified">
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal31">Communication Plan</button>
+        		
+        		
+        	</div>
+        		
+        		</td>
+        	</tr>
+        	</table>
+		<h6>3.4 Attachment B</h6>
+			<table style="width:100%">
+        	<tr>
+        		
+        	<td>
+        	<div class="btn-group btn-group-justified">
+        	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal32">Risk Management Analysis</button>
+        		
+        	        		
+        	</div>
+        		
+        		</td>
+        	</tr>
+        	</table>
+
+
+
+		</div>
+<br>
 		<ul>
 			<li><a target="_blank" href="https://youtu.be/LAG1lDNZfMg">Technical Presentation of the project</a></li>
 			<li><a target="_blank" href="OCS/Tariq Hussain_Work_Sample_1(Functional Design Document).pdf#toolbar=0">UI/UX Concept</a></li>
-			<li><a target="_blank" href="OCS/Tariq Hussain_Work_Sample_10(Project Plan- Web application for managing client information in OCS Consulting).pdf">Project Plan.</a></li>
-			<li><a target="_blank" href="OCS/Graduating Process Report-2019_MTAH_2222716.pdf#toolbar=0">Full Report</a></li>
 			<li><a target="_blank" href="https://www.youtube.com/watch?v=tm8gmxJFW80">Demo</a></li>
 		</ul>
 
-	</div>
-
 	<div class="container">
   
-  	<div class="modal fade" id="myModal1">
+  		<div class="modal fade" id="myModal1">
     	<div class="modal-dialog modal-lg">
-      		<div class="modal-content">
-      
-        
-        	<div class="modal-header">
-          		<h4 class="modal-title">UNIVERSITY SUPERVISOR</h4>
-          		<button type="button" class="close" data-dismiss="modal">&times;</button>
-        	</div>
-        
-        
-        	<div class="modal-body">
-          		<img src="Record Letters/0005.jpg">
-        	</div>
-               
-        
-      		</div>
+      	<div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">UNIVERSITY SUPERVISOR</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <img src="Record Letters/0005.jpg">
+        </div>
+      	</div>
     	</div>
-  	</div>
+  		</div>
+
+
+
   
-  	<div class="modal fade" id="myModal2">
+  		<div class="modal fade" id="myModal2">
     	<div class="modal-dialog modal-lg">
-      		<div class="modal-content">
-      
-        
-        	<div class="modal-header">
-          		<h4 class="modal-title">COMPANY MENTOR</h4>
-          		<button type="button" class="close" data-dismiss="modal">&times;</button>
-        	</div>
-        
-        
-        	<div class="modal-body">
-          		<img src="Record Letters/0007.jpg">
-        	</div>
-               
-        
-      		</div>
+      	<div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">COMPANY MENTOR</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <img src="Record Letters/0007.jpg">
+        </div> 
+      	</div>
     	</div>
-  	</div>
+  		</div>
 
-  	<div class="modal fade" id="myModal3">
+
+
+
+
+  		<div class="modal fade" id="myModal3">
     	<div class="modal-dialog modal-lg">
-      		<div class="modal-content">
-      
-        
-        	<div class="modal-header">
-          		<h4 class="modal-title">EXTERNAL CONSULTANT</h4>
-          		<button type="button" class="close" data-dismiss="modal">&times;</button>
-        	</div>
-        
-        
-        	<div class="modal-body">
-          		<img src="Record Letters/0006.jpg">
-        	</div>
-               
-        
-      		</div>
+      	<div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">EXTERNAL CONSULTANT</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>       
+        <div class="modal-body">
+        <img src="Record Letters/0006.jpg">
+        </div>                       
+      	</div>
     	</div>
-  	</div>
+  	    </div>
+
+
+
+
+
+  		<div class="modal fade" id="myModal4">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <a target="_blank" href="OCS/Graduating Process Report-2019_MTAH_2222716.pdf#toolbar=0">DOWNLOAD FULL-TEXT</a>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo4" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\1. Main Report\1.1 Front Matter\0001.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.1 Front Matter\0002.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.1 Front Matter\0003.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.1 Front Matter\0004.jpg">
+        </div>        
+        <a class="carousel-control-prev" href="#demo4" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo4" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="myModal5">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\1. Main Report\1.1 Front Matter\0005.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+
+  	    <div class="modal fade" id="myModal6">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo6" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\1. Main Report\1.1 Front Matter\0006.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.1 Front Matter\0007.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo6" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo6" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+   
+
+   		<div class="modal fade" id="myModal7">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.1\0008.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+
+
+  	    <div class="modal fade" id="myModal8">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo8" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.2\0009.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.2\0010.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo8" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo8" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="myModal9">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo9" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.3\0011.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.3\0012.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.3\0013.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.3\0014.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.3\0015.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.3\0016.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo9" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo9" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
   
-</div>
 
 
+  		<div class="modal fade" id="myModal10">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.4\0017.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+
+
+
+  	    <div class="modal fade" id="myModal11">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo11" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.5\0018.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.5\0019.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.5\0020.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.5\0021.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.5\0022.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.5\0023.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.5\0024.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo11" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo11" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="myModal12">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo12" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0025.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0026.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0027.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0028.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0029.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0030.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0031.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0032.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0033.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0034.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.6\0035.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo12" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo12" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class="modal fade" id="myModal13">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo13" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.7\0036.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.7\0037.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.7\0038.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo13" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo13" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="modal fade" id="myModal14">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\1. Main Report\1.2 Individual Chapters\Ch.8\0039.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal15">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\1. Main Report\1.3 End Matter\0040.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal16">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\1. Main Report\1.3 End Matter\0041.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+
+  	    <div class="modal fade" id="myModal17">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo17" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\2. Appendix A- Graduation Project Survey\0042.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\2. Appendix A- Graduation Project Survey\0043.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\2. Appendix A- Graduation Project Survey\0044.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\2. Appendix A- Graduation Project Survey\0045.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\2. Appendix A- Graduation Project Survey\0046.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\2. Appendix A- Graduation Project Survey\0047.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\2. Appendix A- Graduation Project Survey\0048.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo17" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo17" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class="modal fade" id="myModal18">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <a target="_blank" href="OCS/Tariq Hussain_Work_Sample_10(Project Plan- Web application for managing client information in OCS Consulting).pdf">DOWNLOAD</a>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo18" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.1 Front Matter\0049.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.1 Front Matter\0050.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.1 Front Matter\0051.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo18" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo18" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+        
+
+        <div class="modal fade" id="myModal19">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.1 Front Matter\0052.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal20">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.1 Front Matter\0053.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal21">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.1\0054.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal22">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.2\0055.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal23">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo23" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.3\0056.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.3\0057.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo23" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo23" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="modal fade" id="myModal24">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo24" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.4\0058.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.4\0059.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo24" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo24" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class="modal fade" id="myModal25">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.5\0060.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+
+  	    <div class="modal fade" id="myModal26">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo26" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.6\0061.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.6\0062.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.6\0063.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo26" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo26" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+ 	  
+
+
+ 	  	<div class="modal fade" id="myModal27">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.7\0064.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal28">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo28" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.8\0065.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.8\0066.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo28" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo28" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="modal fade" id="myModal29">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\Ch.9\0067.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal30">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.2 Individual Chapters\References\0068.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal31">
+    	<div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>   
+        <div class="modal-body">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.3 Attachment A\0069.jpg">
+        </div>
+      	</div>
+    	</div>
+  	    </div>
+
+
+  	    <div class="modal fade" id="myModal32">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <div id="demo32" class="carousel slide" data-interval="6000000" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.4 Attachment B\0070.jpg">
+        </div>
+        <div class="carousel-item">
+        <img src="OCS\IMAGES\3. Appendix B- Project Plan\3.4 Attachment B\0071.jpg">
+        </div>
+        <a class="carousel-control-prev" href="#demo32" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo32" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>                      
+        </div>    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+	</div>
 
 <footer>
 
@@ -189,6 +1125,23 @@
   
 </footer>
 
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+  		acc[i].addEventListener("click", function() {
+    	this.classList.toggle("accordionactive");
+    	var panel = this.nextElementSibling;
+    	if (panel.style.maxHeight) {
+      	panel.style.maxHeight = null;
+    	} else {
+      	panel.style.maxHeight = panel.scrollHeight + "px";
+    	} 
+  		});
+		}
+		</script>
+
 
 		<script>
   
@@ -197,7 +1150,189 @@
         loader.style.display = "none";
         })
 
-        </script>  
+        </script>
+
+        <script>
+        $(document).ready(function(){
+        $("#demo1").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+        <script>
+        $(document).ready(function(){
+        $("#demo6").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo8").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo9").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo11").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo12").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo13").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo17").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo18").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo23").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo24").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo26").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo28").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+
+        <script>
+        $(document).ready(function(){
+        $("#demo32").carousel({interval: 5000});
+        $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+        });
+        });
+        </script>
+
+        
 
 </body>
 </html>
