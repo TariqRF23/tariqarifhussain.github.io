@@ -5598,8 +5598,8 @@ button.close {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: end;
-  justify-content: flex-end;
-  padding: 1rem;
+  justify-content: left;
+  padding: 0.1rem;
   border-top: 1px solid #e9ecef;
 }
 
