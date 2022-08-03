@@ -2350,7 +2350,7 @@ textarea.form-control {
   box-shadow: none;
   outline: none;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   white-space: normal;
   vertical-align: middle;
   -webkit-user-select: none;
