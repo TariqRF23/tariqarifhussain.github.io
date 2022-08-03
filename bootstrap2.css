@@ -6079,10 +6079,11 @@ button.close {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 2%;
+  width: 1.25%;
   color: #fff;
   text-align: center;
   opacity: 0.1;
+  
 }
 
 .carousel-control-prev:hover, .carousel-control-prev:focus,
@@ -6139,7 +6140,7 @@ button.close {
   position: relative;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 30px;
+  width: 3px;
   height: 3px;
   margin-right: 3px;
   margin-left: 3px;
