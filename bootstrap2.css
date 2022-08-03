@@ -2966,6 +2966,8 @@ fieldset:disabled a.btn {
   color: #17a2b8;
   background-color: transparent;
   box-shadow: none !important
+  text-align: left;
+  display: inline-block;
 }
 
 .btn-link:hover {
@@ -2974,12 +2976,16 @@ fieldset:disabled a.btn {
   background-color: transparent;
   border-color: transparent;
   box-shadow: none !important
+  text-align: left;
+  display: inline-block;
 }
 
 .btn-link:focus, .btn-link.focus {
   text-decoration: underline;
   border-color: #ffffff;
   box-shadow: none !important
+  text-align: left;
+  display: inline-block;
 }
 
 .btn-link:disabled, .btn-link.disabled {
@@ -2987,6 +2993,8 @@ fieldset:disabled a.btn {
   pointer-events: none;
   text-decoration: underline;
   box-shadow: none !important
+  text-align: left;
+  display: inline-block;
 }
 
 
