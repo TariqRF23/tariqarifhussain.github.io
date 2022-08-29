@@ -31,6 +31,12 @@ if(!isset($_SESSION['UserData']['Username'])){
 
 
 
+  	<style>
+		.checked {
+  	color: orange;
+							}
+		</style>
+
   	<style type="text/css">
     html, body {
       margin: 0;
@@ -263,7 +269,7 @@ footer {
   }
 
 
-  th, td {
+  td {
   border-style:solid;
   border-color: #d9e7f4;
   padding-top: 10px;
@@ -271,6 +277,42 @@ footer {
   padding-left: 10px;
   padding-right: 5px;
   }
+
+  th {
+  border-style:solid;
+  border-color: #d9e7f4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+  font-family: 'Bahnschrift Light', monospace;
+  }
+
+
+.CellWithComment{
+  position:relative;
+}
+
+.CellComment{
+  display:none;
+  position:absolute; 
+  z-index:100;
+  border:10px;
+  background-color:white;
+  border-style:solid;
+  border-width:1px;
+  border-color:#d9e7f4;
+  padding:15px;
+  color:#d9e7f4; 
+  top:0px; 
+  left:10px;
+  padding-bottom: 0px;
+}
+
+.CellWithComment:hover span.CellComment{
+  display:block;
+}
+
 
 </style>
  
@@ -1459,6 +1501,7 @@ The core values that I believe in are sincerity, creativity, showing initiative 
   					<ul>
 								<li><a target="_blank" href="The Open University/1. Developing high trust work relationships.pdf#toolbar=0">Developing high trust work relationships.</a></li>
 								<li><a target="_blank" href="The Open University/2. Stakeholders in marketing and finance.pdf#toolbar=0">Stakeholders in marketing and finance.</a></li>
+								<li><a target="_blank" href="The Open University/3. Systems modelling.pdf#toolbar=0">Systems modelling.</a></li>
 						</ul>
 </div>
 						<button class="accordion">LinkedIn Learning</button>
@@ -1509,7 +1552,8 @@ The core values that I believe in are sincerity, creativity, showing initiative 
 								<li><a target="_blank" href="Udemy/1. Microsoft Certified Data Analyst Associate with Power BI.pdf#toolbar=0">Microsoft Certified Data Analyst Associate with Power BI</a></li>
 								<li><a target="_blank" href="Udemy/2. Ethereum and Solidity The Complete Developer's Guide.pdf#toolbar=0">Ethereum and Solidity The Complete Developer's Guide</a></li>
 								<li><a target="_blank" href="Udemy/3. UX Strategy Fundamentals.pdf#toolbar=0">UX Strategy Fundamentals</a></li>
-								<li><a target="_blank" href="Udemy/4. Information Architecture (IA) Fundamentals.pdf#toolbar=0">Information Architecture (IA) Fundamentals</a></li>							
+								<li><a target="_blank" href="Udemy/4. Information Architecture (IA) Fundamentals.pdf#toolbar=0">Information Architecture (IA) Fundamentals</a></li>
+								<li><a target="_blank" href="Udemy/5. Enterprise Architecture by example.pdf#toolbar=0">Enterprise Architecture by example</a></li>						
 						</ul>
 </div>
 
@@ -1696,6 +1740,202 @@ The core values that I believe in are sincerity, creativity, showing initiative 
   <br>
 
 </div>
+
+<button type="button" class="collapsible">10. What type of a team-player are you?</button>
+<div class="content">
+	<br>
+  			<p>
+  				My experiences working on team-projects with more than two members have taught me the importance of striking a balance between the various personalities and strengths within a group. This exercise involves the assignment of proper roles and identity of each member. It is a necessary but artful complex.
+  			</p>
+
+  			<p>
+  				I, for one, appreciate a clear-cut description of roles and specializations with a little wiggle room for trying out other facets. However, <i>context is the king</i> when it comes to achieving long-term and short-term goals and I have found most fulfilment in team-work where this ideology is followed. If a team can achieve a full-view of the context within which it will function, and strive to cover each other’s blind-spots effectively, then a team surely enjoys a major advantage.
+  			</p>
+
+  			<p>
+  				With that being said, I have participated in different roles and found affinity towards some more than others. To illustrate my claim, I would like to apply <a href="https://www.belbin.com/about/belbin-team-roles">Dr. Raymond Meredith Belbin’s team-role theory (a model based on behavioural attributes)</a>, using a 5-star rating system (1 star representing the least affinity and 5 stars representing the highest).
+ 				</p>
+
+ 				<p>
+  				
+  			</p>
+
+  			<br>
+
+
+  			<table>
+  				<tr>
+  					<th>Role</th>
+  					<th>Rating</th>
+  				</tr>
+
+  				<tr>
+  					<td class="CellWithComment">Resource Investigator
+  						 
+  						 <span class="CellComment">
+  						 <p>
+  						 	Uses their inquisitive nature to find ideas to bring back to the team.
+  						 </p>
+  						 </span>
+
+  					</td>
+
+  					<td>
+  						<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+  					</td>
+  				</tr>
+							 
+  				<tr>
+  					<td class="CellWithComment">Teamworker
+							<span class="CellComment">
+  						 <p>
+  						 	Helps the team to gel, using their versatility to identify the work required and complete it on behalf of the team.
+  						 </p>
+  						 </span>
+  					</td>
+  					<th>
+  						<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+  					</td>
+  				</tr>
+
+  				<tr>
+  					<td class="CellWithComment">Co-ordinator
+							<span class="CellComment">
+  						 <p>
+  						 	Needed to focus on the team's objectives, draw out team members and delegate work appropriately.
+  						 </p>
+  						 </span>
+  					</td>
+  					<td>
+  						<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+  					</td>
+  				</tr>
+
+  				<tr>
+  					<td class="CellWithComment">Plant
+							<span class="CellComment">
+  						 <p>
+  						 	Tends to be highly creative and good at solving problems in unconventional ways.
+  						 </p>
+  						</span>
+  					</td>
+  					<td>
+  						<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+  					</td>
+  				</tr>
+
+  				<tr>
+  					<td class="CellWithComment">Monitor Evaluator
+							<span class="CellComment">
+  						 <p>
+  						 	Provides a logical eye, making impartial judgements where required and weighs up the team's options in a dispassionate way.
+  						 </p>
+  						 </span>
+  					</td>
+  					<td>
+  						<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+  					</td>
+  				</tr>
+
+  				<tr>
+  					<td class="CellWithComment">Specialist
+							<span class="CellComment">
+  						 <p>
+  						 	Brings in-depth knowledge of a key area to the team.
+  						 </p>
+  						 </span>
+  					</td>
+  					<td>
+  						<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+  					</td>
+  				</tr>
+
+  				<tr>
+  					<td class="CellWithComment">Shaper
+							<span class="CellComment">
+  						 <p>
+  						 	Provides the necessary drive to ensure that the team keeps moving and does not lose focus or momentum.
+  						 </p>
+  						 </span>
+  					</td>
+  					<td>
+  						<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+  					</td>
+  				</tr>
+
+  				<tr>
+  					<td class="CellWithComment">Implementer
+							<span class="CellComment">
+  						 <p>
+  						 	Needed to plan a workable strategy and carry it out as efficiently as possible.
+  						 </p>
+  						</span>
+  					</td>
+  					<td>
+  						<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+  					</td>
+  				</tr>
+
+  				<tr>
+  					<td class="CellWithComment">Completer Finisher
+							 <span class="CellComment">
+  						 <p>
+  						 	Most effectively used at the end of tasks to polish and scrutinise the work for errors, subjecting it to the highest standards of quality control.
+  						 </p>
+  						 </span>
+  					</td>
+  					<td>
+  						<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+  					</th>
+  				</td>
+
+  			</table>
+
+  			<p>
+  				
+  			</p>
+  <br>
+  <hr>
+  <br>
+
+</div>
+
 
 
  </div>
